@@ -10,7 +10,6 @@ class StandardItemSellInZeroOrLessProvider : ArgumentsProvider {
   override fun provideArguments(context: ExtensionContext?): Stream<out Arguments> {
     return Stream.of(
       Arguments.of(Item("a normal one", 0, 0)),
-
       Arguments.of(Item("+5 Dexterity Vest", -10, 0)),
       Arguments.of(Item("Elixir of the Mongoose", -5, 7)),
       Arguments.of(Item("Weird item", -40, 12))
